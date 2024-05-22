@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión y Registro</title>
+    <link rel="stylesheet" href="iniciosesion.css">
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm" class="form active">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="loginUsername" placeholder="Nombre de Usuario" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <form id="registerForm" class="form">
+            <h2>Registrarse</h2>
+            <input type="text" id="registerUsername" placeholder="Nombre de Usuario" required>
+            <input type="email" id="registerEmail" placeholder="Correo Electrónico" required>
+            <input type="password" id="registerPassword" placeholder="Contraseña" required>
+            <a href="formulario.html" class="btn">Registrarse</a>
+        </form>
+        <p id="toggleForm">¿No tienes una cuenta? <a href="#" id="registerLink">Regístrate aquí</a>.</p>
+    </div>
+
+    <script src="iniciosesion.js"></script>
+</body>
+</html>
