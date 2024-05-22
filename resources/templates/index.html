@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Suplementos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FITNESS STORE</h1>
+            </div>
+            <div class="cart-icon">
+                <a href="#" onclick="showCart()">
+                    <img src="img/cart-icon (3).png" alt="Carrito de Compras">
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <nav>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#suplementos">Suplementos</a></li>
+                    <li><a href="iniciosesion.html" class="navegacion_login">Login/Create</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header__texto">
+            <h2 class="no_margin">TIENDA SUPLEMENTOS</h2>
+            <p>"Cada día es una nueva oportunidad para comenzar de nuevo."</p>
+        </div>
+    </header>
+
+    <!-- SUPLEMENTOS -->
+    <main id="inicio">
+        <h2 class="titulo">SUPLEMENTOS</h2>
+        <section class="products" id="suplementos">
+            <!-- Productos -->
+            <div class="product" data-id="1">
+                <img src="img/bodyripped.png" alt="Producto 1">
+                <h3>Boddy Ripped</h3>
+                <p>Es un suplemento de proteína en polvo diseñado para ayudar a perder peso y aumentar la masa muscular.</p>
+                <p>$120.000</p>
+                <button class="boton-comprar" onclick="addToCart('Boddy Ripped', 120000, 'img/bodyripped.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="2">
+                <img src="img/aminocreat.png" alt="Producto 2">
+                <h3>Creatina Amino Mass</h3>
+                <p>Creatina Amino Mass es un suplemento en polvo diseñado para apoyar el desarrollo muscular, la fuerza y el rendimiento deportivo.</p>
+                <p>$150.000</p>
+                <button class="boton-comprar" onclick="addToCart('Creatina Amino Mass', 150000, 'img/aminocreat.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="3">
+                <img src="img/mega1.png" alt="Producto 3">
+                <h3>Mega Gainer</h3>
+                <p>Mega Gainer es un suplemento de proteína en polvo diseñado para ayudar a aumentar la masa muscular y la fuerza.</p>
+                <p>$120.000</p>
+                <button class="boton-comprar" onclick="addToCart('Mega Gainer', 120000, 'img/mega1.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="4">
+                <img src="img/creatinesupre.png" alt="Producto 4">
+                <h3>Creatina Supreme</h3>
+                <p>Creatine Supreme es un suplemento de creatina monohidratada, que es una sustancia que se encuentra naturalmente en los músculos.</p>
+                <p>$182.000</p>
+                <button class="boton-comprar" onclick="addToCart('Creatina Supreme', 182000, 'img/creatinesupre.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="5">
+                <img src="img/bestprotein.png" alt="Producto 5">
+                <h3>Best Protein</h3>
+                <p>Best Protein es un suplemento de proteína en polvo eficaz que puede ayudar a aumentar la masa muscular, mejorar el rendimiento deportivo y acelerar la recuperación muscular.</p>
+                <p>$155.000</p>
+                <button class="boton-comprar" onclick="addToCart('Best Protein', 155000, 'img/bestprotein.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="6">
+                <img src="img/creatinmono.png" alt="Producto 6">
+                <h3>Creatina Monohidrato</h3>
+                <p>La creatina monohidrato es un suplemento seguro y eficaz que puede ayudar a mejorar el rendimiento deportivo y el crecimiento muscular. Sin embargo, es importante hablar con su médico antes de tomar creatina monohidrato, especialmente si tiene alguna condición médica preexistente.</p>
+                <p>$180.000</p>
+                <button class="boton-comprar" onclick="addToCart('Creatina Monohidrato', 180000, 'img/creatinmono.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="7">
+                <img src="img/bigpro.png" alt="Producto 7">
+                <h3>Proteina Big Pro</h3>
+                <p class="descripcion">Big Pro es un suplemento popular entre los atletas, los culturistas y las personas que buscan aumentar su masa muscular y su rendimiento deportivo.</p>
+                <p class="precio">$250.000</p>
+                <button class="boton-comprar" onclick="addToCart('Big Pro', 250000, 'img/bigpro.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="8">
+                <img src="img/creatinepure.png" alt="Producto 8">
+                <h3>Creatina Pure</h3>
+                <p class="descripcion">Tu aliado para alcanzar tus metas fitness. Aumenta tu fuerza, masa muscular y rendimiento físico con nuestra fórmula de alta calidad. Mezcla fácilmente en tu bebida favorita.</p>
+                <p class="precio">$200.000</p>
+                <button class="boton-comprar" onclick="addToCart('Creatina Pure', 200000, 'img/creatinepure.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="9">
+                <img src="img/naturalwhey.png" alt="Producto 9">
+                <h3>Proteina Natural Whey</h3>
+                <p class="descripcion">Natural Whey es un suplemento de proteína en polvo diseñado para ayudar a aumentar la masa muscular, mejorar el rendimiento deportivo y la recuperación.</p>
+                <p class="precio">$250.000</p>
+                <button class="boton-comprar" onclick="addToCart('Natural Whey', 250000, 'img/naturalwhey.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="10">
+                <img src="img/Micronizada.png" alt="Producto 10">
+                <h3>Creatina Micronizada</h3>
+                <p class="descripcion">La creatina micronizada de BPI Sports es un suplemento de creatina de alta calidad que es perfecto para personas que buscan aumentar su fuerza, potencia y rendimiento deportivo.</p>
+                <p class="precio">$89.000</p>
+                <button class="boton-comprar" onclick="addToCart('Creatina Micronizada', 89000, 'img/Micronizada.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="11">
+                <img src="img/proteinisolata.png" alt="Producto 11">
+                <h3>Proteina Isolate</h3>
+                <p class="descripcion">La proteína de suero hidrolizada sabor chocolate de Sascha Fitness es un suplemento de proteína de alta calidad que es perfecto para personas que buscan un suplemento de proteína que se pueda digerir y absorber fácilmente.</p>
+                <p class="precio">$330.000</p>
+                <button class="boton-comprar" onclick="addToCart('Proteina Isolate', 330000, 'img/proteinisolata.png')">Añadir al Carrito</button>
+            </div>
+            <div class="product" data-id="12">
+                <img src="img/glutamine.png" alt="Producto 12">
+                <h3>Glutamine Podwer</h3>
+                <p class="descripcion">La glutamine es un aminoácido que se encuentra naturalmente en el cuerpo. Es uno de los aminoácidos más abundantes en el tejido muscular.</p>
+                <p class="precio">$125.000</p>
+                <button class="boton-comprar" onclick="addToCart('Glutamine Podwer', 125000, 'img/glutamine.png')">Añadir al Carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cart-list" class="cart-list">
+                <!-- Aquí se repiten los elementos del carrito para cada producto -->
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">$0.00</span></p>
+                <a href="factura.html" class="boton-comprar">Comprar</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tienda Suplementos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
